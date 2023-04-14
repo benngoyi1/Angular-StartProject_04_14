@@ -6,9 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  showOrhide:boolean = true;
+  showOrhide: boolean = true;
+  count: number = 0;
+  log: number[] = [];
 
-  toggle(){
-    this.showOrhide = !this.showOrhide
+  toggle() {
+    this.showOrhide = !this.showOrhide;
+    this.log.push(this.count++);
   }
 }

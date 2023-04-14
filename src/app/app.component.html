@@ -2,4 +2,6 @@
   <button class="btn btn-primary"
   (click)="toggle()">Display Details!</button>
   <p *ngIf="showOrhide">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam molestias, obcaecati odit rem voluptate veritatis ipsum ad veniam expedita repellat similique at officiis ullam tempora!</p>
+  <p
+  *ngFor = "let Item Of log; let i = index">{{i + 1}}.Hello World</p>
 </div>
